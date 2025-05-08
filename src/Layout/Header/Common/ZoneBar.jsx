@@ -39,8 +39,7 @@ const ZoneBar = () => {
       const existingScript = document.getElementById("google-map-script");
       if (!existingScript) {
         const script = document.createElement("script");
-        script.src =
-          "https://maps.googleapis.com/maps/api/js?key=AIzaSyAaWgMRrsI509HvDzIcWAXYt_YY7mIbKp8&libraries=places,geometry";
+        script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBJbBlpDZfgZZnNPIamVeSOuX97VR4T9cI&libraries=places,geometry";
         script.id = "google-map-script";
         script.async = true;
         script.defer = true;

@@ -2,18 +2,14 @@
 const nextConfig = {
   env: { 
     baseUrl: "https://fastkart-frontend-rest.vercel.app/", 
-    URL: "https://api.liranovawebapi.shinewell.in/api",
-    storageURL:"https://api.liranovawebapi.shinewell.in",
+    URL: "https://liranovawebapi.shinewell.in/api",
+    storageURL:"https://liranovawebapi.shinewell.in",
   },
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "api.liranovawebapi.shinewell.in",
-      },
-      { 
-        protocol: "http",
-        hostname: "127.0.0.1",
+        hostname: "liranovawebapi.shinewell.in",
       },
       {
         protocol: "http",
@@ -21,11 +17,8 @@ const nextConfig = {
       },
       {
         protocol: "http",
-        hostname: "laravel.pixelstrap.net/fastkart",
-      },
-      {
-        protocol: "https",
-        hostname: "laravel.pixelstrap.net/fastkart",
+        hostname: "127.0.0.1",
+        port: "8000",
       },
       {
         protocol: 'https',
@@ -49,6 +42,7 @@ const nextConfig = {
       },
     ],
   },
+  
 };
 
 module.exports = nextConfig;
