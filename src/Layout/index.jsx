@@ -22,7 +22,7 @@ import { ToastContainer } from "react-toastify";
 import SubLayout from "./SubLayout";
 import BrandIdsProvider from "@/Helper/BrandIdsContext/BrandIdsProvider";
 import BlogIdsProvider from "@/Helper/BlogIdsContext/BlogIdsProvider";
-import ZoneProvider from "@/Helper/ZoneContext/ZoneProvider";
+// import ZoneProvider from "@/Helper/ZoneContext/ZoneProvider";
 
 const MainLayout = ({ children }) => {
   useEffect(() => {
@@ -35,7 +35,7 @@ const MainLayout = ({ children }) => {
     <>
       <QueryClientProvider client={queryClient}>
         <Hydrate state={children.dehydratedState}>
-          <ZoneProvider>
+          {/* <ZoneProvider> */}
             <ThemeOptionProvider>
               <AccountProvider>
                 <SellerProvider>
@@ -67,7 +67,7 @@ const MainLayout = ({ children }) => {
                 </SellerProvider>
               </AccountProvider>
             </ThemeOptionProvider>
-          </ZoneProvider>
+          {/* </ZoneProvider> */}
         </Hydrate>
       </QueryClientProvider>
       <ToastContainer autoClose={2000} theme="colored" />

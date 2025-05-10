@@ -40,9 +40,9 @@ const HeaderTopBar = () => {
           <TopbarSlider />
           <Col lg={3} >
             <ul className="about-list right-nav-about">
-              {settingData?.activation?.zone_enable && (
+              {/* {settingData?.activation?.zone_enable && (
                   <ZoneBar/>
-              )}
+              )} */}
               <li className="right-nav-list">
                 <TopLanguage />
               </li>
