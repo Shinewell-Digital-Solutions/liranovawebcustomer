@@ -21,8 +21,8 @@ const BasicFooter = () => {
 
     console.log("BasicFooter rendered"); 
     return (
-        <div className="container-fluid-lg">
-            <div className="main-footer section-b-space">
+        <div className="container-fluid-lg footer-sections">
+            <div className="main-footer footer-section">
                 <Row className="g-md-4 g-3">
                     <Col xl={3} lg={4} sm={6}>
                         <div className='footer-logo'>
@@ -77,6 +77,16 @@ const BasicFooter = () => {
                 </div>
                 <FooterSocial />
             </div>
+
+            <style>{`
+        .footer-sections{
+        width: 100% !important;
+
+                .section-b-space{
+                width: 100% !important;
+                }
+        }
+        `}</style>
         </div >
     );
 };

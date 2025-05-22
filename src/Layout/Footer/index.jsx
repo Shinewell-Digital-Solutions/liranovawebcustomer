@@ -3,7 +3,6 @@ import BasicFooter from "./BasicFooter";
 import SubscribeFooter from "./SubscribeFooter";
 import { useSearchParams } from "next/navigation";
 import ThemeOptionContext from "@/Helper/ThemeOptionsContext";
-import NewFooter from "./FooterLiranova";
 
 const MainFooter = () => {
   const [style, setStyle] = useState("")
@@ -46,8 +45,7 @@ const MainFooter = () => {
           <BasicFooter />
         }
       </footer>
-      <NewFooter/>
-
+        
     </>
   );
 };

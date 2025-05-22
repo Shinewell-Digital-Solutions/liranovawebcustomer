@@ -49,7 +49,7 @@ const TopbarSlider = ({ customClass }) => {
       <style>
         {`
         .notification-slider h6{
-        color: black !important;
+        color: white !important;
         }
         `}
       </style>

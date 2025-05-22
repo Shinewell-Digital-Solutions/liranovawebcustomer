@@ -70,7 +70,7 @@ const BasicHeader = ({ headerClass }) => {
           }
 
           .top-header-new {
-            background: linear-gradient(180deg, #8ee6f3, #0d55c9);
+            background: #174b97;
             padding-bottom: 0 !important;
           }
 

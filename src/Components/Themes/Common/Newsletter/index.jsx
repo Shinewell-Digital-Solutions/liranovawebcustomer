@@ -25,7 +25,7 @@ const NewsLetter = ({ dataAPI, style = 'basic' }) => {
   return (
     <>
       {style == 'basic' &&
-        <WrapperComponent classes={{ sectionClass: 'newsletter-section section-b-space' }} noRowCol={true}>
+        <WrapperComponent classes={{ sectionClass: 'newsletter-section newsletter-sec section-b-space' }} noRowCol={true}>
           <div className='newsletter-box newsletter-box-2' style={{ backgroundImage: `url(${LiveImagePath}${dataAPI?.image_url})` }}>
             <div className='newsletter-contain py-5'>
               <Container fluid={true}>
@@ -109,7 +109,11 @@ const NewsLetter = ({ dataAPI, style = 'basic' }) => {
           </div>
         </WrapperComponent>
       }
-
+      <style>{`
+      .newsletter-sec{
+      width: 100% !important;
+      }
+      `}</style>
     </>
   );
 };

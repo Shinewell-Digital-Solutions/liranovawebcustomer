@@ -53,10 +53,7 @@ const TopLanguage = () => {
     transition: .3s ease-in-out;
     cursor: pointer;
     font-weight: bold;
-    color: black;
-    &:hover{
-    color: black;
-    }
+    color: white;
     }
     `}</style>
 
