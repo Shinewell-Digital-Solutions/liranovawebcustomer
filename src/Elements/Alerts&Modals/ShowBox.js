@@ -8,7 +8,7 @@ const ShowBox = ({ showBoxMessage }) => {
     <div className={showBoxMessage ? "error-box" : "success-box"}>
       {showBoxMessage ? <BiError /> : <BiCheckShield />}
       <div>
-        <h4>{showBoxMessage ? t("ThereWasAProblem") : t("Success")} </h4>
+        <h4>{showBoxMessage ? t("There Was A Problem") : t("Success")} </h4>
         <p>{t(showBoxMessage)}</p>
       </div>
     </div>

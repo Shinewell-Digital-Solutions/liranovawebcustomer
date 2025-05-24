@@ -16,10 +16,35 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/(mainLayout)/[...not-found]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(mainLayout)/[...not-found]/page.js"
+    ],
     "/(mainLayout)/auth/login/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(mainLayout)/auth/login/page.js"
+    ],
+    "/(mainLayout)/auth/forgot-password/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(mainLayout)/auth/forgot-password/page.js"
+    ],
+    "/(mainLayout)/auth/register/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(mainLayout)/auth/register/page.js"
+    ],
+    "/(mainLayout)/auth/phn-login/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(mainLayout)/auth/phn-login/page.js"
+    ],
+    "/(mainLayout)/search/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(mainLayout)/search/page.js"
     ]
   }
 }

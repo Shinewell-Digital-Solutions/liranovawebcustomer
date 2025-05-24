@@ -1,15 +1,15 @@
 import React, { useContext } from 'react';
 import Btn from '@/Elements/Buttons/Btn';
 import MainHeaderMenu from './MainHeaderMenu';
-
 import { useTranslation } from "react-i18next";
+import Link from 'next/link';
 import ThemeOptionContext from '@/Helper/ThemeOptionsContext';
-import { RiCloseLine, RiMessage2Line, RiPhoneLine, RiMailLine, RiWhatsappLine  } from 'react-icons/ri';
+import { RiCloseLine, RiMessage2Line, RiPhoneLine, RiMailLine, RiWhatsappLine } from 'react-icons/ri';
 
 const ClassicHeaderMenu = () => {
-  
+
   const { mobileSideBar, setMobileSideBar } = useContext(ThemeOptionContext);
-  const { t } = useTranslation( 'common');
+  const { t } = useTranslation('common');
   return (
     // hamburger menu bar 
     <div className='header-nav-middle'>
@@ -21,12 +21,19 @@ const ClassicHeaderMenu = () => {
                 <img src="/assets/images/profile.png" alt="" />
               </div>
               <span>
-            <h5>{t('Hi Gorgeous')}</h5>
-            <p>{t('Login, Register')}</p>
+                <h5>{t('Hi Gorgeous')}</h5>
+                <p className='profile-link'>
+                  <Link href={`/auth/login`}>
+                    {t('Login')},
+                  </Link>
+                  <Link href={`/auth/register`}>
+                    {t(' Register')}
+                  </Link>
+                </p>
               </span>
             </div>
             <Btn className='btn-close lead' type='button' onClick={() => setMobileSideBar(!mobileSideBar)}>
-              <RiCloseLine/>
+              <RiCloseLine />
             </Btn>
           </div>
           <div className='offcanvas-body'>
@@ -37,7 +44,7 @@ const ClassicHeaderMenu = () => {
                 <p><RiPhoneLine /> Call /<RiMailLine /> Email</p>
               </div>
               <div className="offcanvas-purchase">
-               <p><RiWhatsappLine /> Buy on whatsapp</p></div>
+                <p><RiWhatsappLine /> Buy on whatsapp</p></div>
             </div>
           </div>
         </div>
@@ -55,6 +62,9 @@ const ClassicHeaderMenu = () => {
         border-top: 1px solid black;
         justify-content: center;
         margin-top: 20px;
+        }
+        .profile-link{
+          text-decoration: none;
         }
         @media(max-width: 1200px){
       
@@ -100,12 +110,15 @@ const ClassicHeaderMenu = () => {
             font-weight: 400 !important;
           }
             .header-menu-profile p{
-            color: red;
             margin-bottom: 0;
             font-size: 12px !important;
             font-weight: 400 !important;
-            text-decoration: underline;
             cursor: pointer;
+
+            a{
+              text-decoration: none;
+              cursor: pointer;
+            }
             }
             .offcanvas-chat{
             display: flex; 

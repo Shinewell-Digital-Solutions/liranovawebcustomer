@@ -21,18 +21,18 @@ const LoginContent = () => {
 
   return (
     <>
-      <Breadcrumb title={'log_in'} subNavigation={[{ name: 'log_in' }]} />
+      {/* <Breadcrumb title={'log_in'} subNavigation={[{ name: 'log_in' }]} /> */}
       <WrapperComponent classes={{ sectionClass: 'log-in-section background-image-2 section-b-space', fluidClass: 'w-100' }} customCol={true}>
-        <Col xxl={6} xl={5} lg={6} className='d-lg-block d-none ms-auto'>
+        {/* <Col xxl={6} xl={5} lg={6} className='d-lg-block d-none ms-auto'>
           <div className='image-contain'>
             {loginImage && <Image src={loginImage} className='img-fluid' alt='loginImage' height={465} width={550} />}
           </div>
-        </Col>
+        </Col> */}
 
         <Col xxl={4} xl={5} lg={6} sm={8} className='mx-auto'>
             <ShowBox showBoxMessage={showBoxMessage} />
-          <div className='log-in-box'>
-            <AuthHeadings heading1={`Welcome to ${settingData?.general?.site_name}`} heading2={'LogInYourAccount'} />
+          <div className='log-in-box new-login'>
+            <AuthHeadings heading1={`Welcome to ${settingData?.general?.site_name}`} heading2={'Login Your Account'} />
             <div className='input-box mb-2'>
               <LoginForm  mutate={mutate} isLoading={isLoading}/>
             </div>
@@ -47,6 +47,15 @@ const LoginContent = () => {
           </div>
         </Col>
       </WrapperComponent>
+            {/* liranova css new login */}
+      <style>{`
+      .new-login{
+      // background:rgba(23, 74, 151, 0.54) !important;
+      background: #174b9700 !important;
+      backdrop-filter: blur(20px);
+      box-shadow: 0px 0px 0px 100rem #174b972e;
+      }
+      `}</style>
     </>
   );
 };

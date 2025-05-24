@@ -117,7 +117,7 @@ const HeaderProfile = ({ extraClass }) => {
             cursor: pointer !important;
         font-size: 12px;
         font-weight: 500;
-        background:#1a4b99;
+        background:#118f79;
         color: white;
         padding: 2px 5px;
         border-radius: 10px 10px 10px 0;
@@ -140,7 +140,7 @@ const HeaderProfile = ({ extraClass }) => {
         position: absolute;
         width: 15px;
         height: 10px;
-        background: #1a4b99;
+        background: #118f79;
         bottom: -3px;
         left: -4px;
         clip-path: polygon(25% 0, 9% 100%, 100% 41%);

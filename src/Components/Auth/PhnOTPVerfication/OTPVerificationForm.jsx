@@ -14,7 +14,7 @@ const OTPVerificationForm = () => {
   const code = Cookies.get('uc');
   const phone = Cookies.get('up');
   const [otp, setOtp] = useState('');
-  const { t } = useTranslation( 'common');
+  const { t } = useTranslation('common');
   const { mutate: phnOtpVerification } = usePhnOtpVerification(setShowBoxMessage);
   const handleChange = (e) => {
     if (e.target.value.length <= 5 && !isNaN(Number(e.target.value))) {
@@ -25,12 +25,14 @@ const OTPVerificationForm = () => {
     <>
       <ShowBox showBoxMessage={showBoxMessage} />
       <Formik
-       initialValues={{
-        country_code: '91',
-        phone: ''
-      }}
-        onSubmit={(values) => otp && otp.length === 5 && phnOtpVerification({ country_code: code,
-        phone: phone, token: otp })}>
+        initialValues={{
+          country_code: '91',
+          phone: ''
+        }}
+        onSubmit={(values) => otp && otp.length === 5 && phnOtpVerification({
+          country_code: code,
+          phone: phone, token: otp
+        })}>
         {() => (
           <Form className='row g-2'>
             <div className='log-in-title'>
@@ -45,10 +47,19 @@ const OTPVerificationForm = () => {
                 <Input type='text' className='no-background' maxLength='5' onChange={handleChange} value={otp} />
               </div>
             </div>
-            <FormBtn title={'validate'} classes={{ btnClass: 'btn btn-animation w-100 mt-3' }}  />
+            <FormBtn title={'validate'} classes={{ btnClass: 'btn new-btn btn-animation w-100 mt-3' }} />
           </Form>
         )}
       </Formik>
+      {/* liranova css login-btn */}
+      <style>{`
+        .new-btn {
+          background: #118f79 !important;
+        }
+        .new-btn::before {
+          background: #0f7a6a !important;
+        }
+      `}</style>
     </>
   );
 };

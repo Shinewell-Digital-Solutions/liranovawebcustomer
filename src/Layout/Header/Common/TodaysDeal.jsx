@@ -28,7 +28,7 @@ const TodaysDeal = () => {
         {`
         .deal-button{
         color: white !important;
-        background: #1a4b99 !important;
+        background: #118f79  !important;
         border-radius: 0px !important;
         }
         .flash-icon{

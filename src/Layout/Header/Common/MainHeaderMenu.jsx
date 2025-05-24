@@ -37,288 +37,288 @@ const MainHeaderMenu = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  const menuItems = [
-    {
-      title: "BRAS",
-      icon: '/assets/images/bra.png',
-      tag: '',
-      topic: 'Bra',
-      subItems: [
-        "T-Shirt Bra",
-        "Push-Up Bra",
-        "Padded Bra",
-        "Non-Padded Bra",
-        "Underwired Bra",
-      ],
-      sports: [
-        {
-          topic: "Sport Bra",
-          items: [
-            "Sports Bra",
-            "Yoga Pants",
-            "Track Pants",
-            "Tights",
-            "Pants",
-          ]
-        }
-      ],
-      image: '/assets/images/cookie-bar.png',
-    },
-    {
-      title: "PANTIES",
-      icon: '/assets/images/pantie.png',
-      tag: '',
-      topic: 'Bra',
-      subItems: [
-        "Briefs",
-        "Hipsters",
-        "Thongs",
-        "Bikini Panty",
-        "Boyshorts",
-        "Seamless Panty",
+  // const menuItems = [
+  //   {
+  //     title: "BRAS",
+  //     icon: '/assets/images/bra.png',
+  //     tag: '',
+  //     topic: 'Bra',
+  //     subItems: [
+  //       "T-Shirt Bra",
+  //       "Push-Up Bra",
+  //       "Padded Bra",
+  //       "Non-Padded Bra",
+  //       "Underwired Bra",
+  //     ],
+  //     sports: [
+  //       {
+  //         topic: "Sport Bra",
+  //         items: [
+  //           "Sports Bra",
+  //           "Yoga Pants",
+  //           "Track Pants",
+  //           "Tights",
+  //           "Pants",
+  //         ]
+  //       }
+  //     ],
+  //     image: '/assets/images/cookie-bar.png',
+  //   },
+  //   {
+  //     title: "PANTIES",
+  //     icon: '/assets/images/pantie.png',
+  //     tag: '',
+  //     topic: 'Bra',
+  //     subItems: [
+  //       "Briefs",
+  //       "Hipsters",
+  //       "Thongs",
+  //       "Bikini Panty",
+  //       "Boyshorts",
+  //       "Seamless Panty",
 
-      ],
-      sports: [
-        {
-          topic: "Sport Bra",
-          items: [
-            "Sports Bra",
-            "Yoga Pants",
-            "Track Pants",
-            "Tights",
-            "Pants",
-            "Panties",
-            "Nightwear",
-            "Active",
-            "Plus Size Active",
-            "Plus Size Nightwear",
-            "Plus Size Panties",
+  //     ],
+  //     sports: [
+  //       {
+  //         topic: "Sport Bra",
+  //         items: [
+  //           "Sports Bra",
+  //           "Yoga Pants",
+  //           "Track Pants",
+  //           "Tights",
+  //           "Pants",
+  //           "Panties",
+  //           "Nightwear",
+  //           "Active",
+  //           "Plus Size Active",
+  //           "Plus Size Nightwear",
+  //           "Plus Size Panties",
 
-          ]
-        }
-      ],
-      image: '/assets/images/cookie-bar.png',
-    },
-    {
-      title: "NIGHTWEAR",
-      icon: '/assets/images/nightwear.png',
-      tag: '',
-      topic: 'Bra',
-      subItems: [
-        "Nighty",
-        "Shorts Set",
-        "Camisole Set",
-        "Babydoll",
-        "Night Suit",
+  //         ]
+  //       }
+  //     ],
+  //     image: '/assets/images/cookie-bar.png',
+  //   },
+  //   {
+  //     title: "NIGHTWEAR",
+  //     icon: '/assets/images/nightwear.png',
+  //     tag: '',
+  //     topic: 'Bra',
+  //     subItems: [
+  //       "Nighty",
+  //       "Shorts Set",
+  //       "Camisole Set",
+  //       "Babydoll",
+  //       "Night Suit",
 
-      ],
-      sports: [
-        {
-          topic: "Sport Bra",
-          items: [
-            "Sports Bra",
-            "Yoga Pants",
-            "Track Pants",
-            "Tights",
-            "Pants",
+  //     ],
+  //     sports: [
+  //       {
+  //         topic: "Sport Bra",
+  //         items: [
+  //           "Sports Bra",
+  //           "Yoga Pants",
+  //           "Track Pants",
+  //           "Tights",
+  //           "Pants",
 
-          ]
-        }
-      ],
-      image: '/assets/images/cookie-bar.png',
-    },
-    {
-      title: "ACTIVE",
-      icon: '/assets/images/active.png',
-      tag: '',
-      topic: 'Bra',
-      subItems: [
-        "Sports Bra",
-        "Yoga Pants",
-        "Track Pants",
-        "Tights",
-        "Tank Tops",
-        "Running Shorts",
-        "Activewear Jacket",
-        "Gym Shorts",
-        "Crop Top",
-        "Active Sets"
-      ],
-      sports: [
-        {
-          topic: "Sport Bra",
-          items: [
-            "Sports Bra",
-            "Yoga Pants",
-            "Track Pants",
-            "Tights",
-            "Pants",
-            "Panties",
-            "Nightwear",
-            "Active",
-            "Plus Size Active",
-            "Plus Size Nightwear",
-            "Plus Size Panties",
-            "Plus Size Pants",
-            "Plus Size Underwear",
-            "Plus Size Swimwear"
-          ]
-        }
-      ],
-      image: '/assets/images/cookie-bar.png',
-    },
-    {
-      title: "SHAPEWEAR",
-      icon: '/assets/images/shapewear.png',
-      tag: '',
-      topic: 'Bra',
-      subItems: [
-        "Tummy Tucker",
-        "Thigh Shaper",
-        "Shaping Panty",
-        "Bodysuit",
-        "Waist Cincher",
-        "Control Shorts",
-        "Saree Shapewear",
-        "High Waist Brief",
+  //         ]
+  //       }
+  //     ],
+  //     image: '/assets/images/cookie-bar.png',
+  //   },
+  //   {
+  //     title: "ACTIVE",
+  //     icon: '/assets/images/active.png',
+  //     tag: '',
+  //     topic: 'Bra',
+  //     subItems: [
+  //       "Sports Bra",
+  //       "Yoga Pants",
+  //       "Track Pants",
+  //       "Tights",
+  //       "Tank Tops",
+  //       "Running Shorts",
+  //       "Activewear Jacket",
+  //       "Gym Shorts",
+  //       "Crop Top",
+  //       "Active Sets"
+  //     ],
+  //     sports: [
+  //       {
+  //         topic: "Sport Bra",
+  //         items: [
+  //           "Sports Bra",
+  //           "Yoga Pants",
+  //           "Track Pants",
+  //           "Tights",
+  //           "Pants",
+  //           "Panties",
+  //           "Nightwear",
+  //           "Active",
+  //           "Plus Size Active",
+  //           "Plus Size Nightwear",
+  //           "Plus Size Panties",
+  //           "Plus Size Pants",
+  //           "Plus Size Underwear",
+  //           "Plus Size Swimwear"
+  //         ]
+  //       }
+  //     ],
+  //     image: '/assets/images/cookie-bar.png',
+  //   },
+  //   {
+  //     title: "SHAPEWEAR",
+  //     icon: '/assets/images/shapewear.png',
+  //     tag: '',
+  //     topic: 'Bra',
+  //     subItems: [
+  //       "Tummy Tucker",
+  //       "Thigh Shaper",
+  //       "Shaping Panty",
+  //       "Bodysuit",
+  //       "Waist Cincher",
+  //       "Control Shorts",
+  //       "Saree Shapewear",
+  //       "High Waist Brief",
 
-      ],
-      sports: [
-        {
-          topic: "Sport Bra",
-          items: [
-            "Sports Bra",
-            "Yoga Pants",
-            "Track Pants",
-            "Tights",
-            "Pants",
-            "Panties",
-            "Nightwear",
-            "Active",
-            "Plus Size Active",
-            "Plus Size Nightwear",
+  //     ],
+  //     sports: [
+  //       {
+  //         topic: "Sport Bra",
+  //         items: [
+  //           "Sports Bra",
+  //           "Yoga Pants",
+  //           "Track Pants",
+  //           "Tights",
+  //           "Pants",
+  //           "Panties",
+  //           "Nightwear",
+  //           "Active",
+  //           "Plus Size Active",
+  //           "Plus Size Nightwear",
 
-          ]
-        }
-      ],
-      image: '/assets/images/cookie-bar.png',
-    },
-    {
-      title: "SWIM",
-      icon: '/assets/images/swim.png',
-      tag: '',
-      topic: 'Bra',
-      subItems: [
-        "One-Piece",
-        "Two-Piece",
-        "Swim Dress",
-        "Tankini",
-        "Swim Shorts",
-        "Bikini Top",
-        "Bikini Bottom",
+  //         ]
+  //       }
+  //     ],
+  //     image: '/assets/images/cookie-bar.png',
+  //   },
+  //   {
+  //     title: "SWIM",
+  //     icon: '/assets/images/swim.png',
+  //     tag: '',
+  //     topic: 'Bra',
+  //     subItems: [
+  //       "One-Piece",
+  //       "Two-Piece",
+  //       "Swim Dress",
+  //       "Tankini",
+  //       "Swim Shorts",
+  //       "Bikini Top",
+  //       "Bikini Bottom",
 
-      ],
-      sports: [
-        {
-          topic: "Sport Bra",
-          items: [
-            "Sports Bra",
-            "Yoga Pants",
-            "Track Pants",
-            "Tights",
-            "Pants",
-            "Panties",
-            "Nightwear",
-            "Active",
-            "Plus Size Active",
-            "Plus Size Nightwear",
-            "Plus Size Panties",
+  //     ],
+  //     sports: [
+  //       {
+  //         topic: "Sport Bra",
+  //         items: [
+  //           "Sports Bra",
+  //           "Yoga Pants",
+  //           "Track Pants",
+  //           "Tights",
+  //           "Pants",
+  //           "Panties",
+  //           "Nightwear",
+  //           "Active",
+  //           "Plus Size Active",
+  //           "Plus Size Nightwear",
+  //           "Plus Size Panties",
 
-          ]
-        }
-      ],
-      image: '/assets/images/cookie-bar.png',
-    },
-    {
-      title: "MENS",
-      icon: '/assets/images/men.png',
-      tag: '',
-      topic: 'Bra',
-      subItems: [
-        "Boxers",
-        "Briefs",
-        "Trunks",
-        "Vests",
-        "Thermals",
-        "Lounge Pants",
-        "Sleepwear",
+  //         ]
+  //       }
+  //     ],
+  //     image: '/assets/images/cookie-bar.png',
+  //   },
+  //   {
+  //     title: "MENS",
+  //     icon: '/assets/images/men.png',
+  //     tag: '',
+  //     topic: 'Bra',
+  //     subItems: [
+  //       "Boxers",
+  //       "Briefs",
+  //       "Trunks",
+  //       "Vests",
+  //       "Thermals",
+  //       "Lounge Pants",
+  //       "Sleepwear",
 
-      ],
-      sports: [
-        {
-          topic: "Sport Bra",
-          items: [
-            "Sports Bra",
-            "Yoga Pants",
-            "Track Pants",
-            "Tights",
-            "Pants",
-            "Panties",
-            "Nightwear",
-            "Active",
-            "Plus Size Active",
-            "Plus Size Nightwear",
-            "Plus Size Panties",
+  //     ],
+  //     sports: [
+  //       {
+  //         topic: "Sport Bra",
+  //         items: [
+  //           "Sports Bra",
+  //           "Yoga Pants",
+  //           "Track Pants",
+  //           "Tights",
+  //           "Pants",
+  //           "Panties",
+  //           "Nightwear",
+  //           "Active",
+  //           "Plus Size Active",
+  //           "Plus Size Nightwear",
+  //           "Plus Size Panties",
 
-          ]
-        }
-      ],
-      image: '/assets/images/cookie-bar.png',
-    },
-    {
-      title: "SKIVIA",
-      icon: '/assets/images/skivia.png',
-      tag: 'New',
-      border: 'none',
-      topic: 'Bra',
-      subItems: [
-        "Luxury Bras",
-        "Everyday Bras",
-        "Printed Panties",
-        "Lace Lingerie",
-        "Nightwear Sets",
-        "Seamless Panties",
+  //         ]
+  //       }
+  //     ],
+  //     image: '/assets/images/cookie-bar.png',
+  //   },
+  //   {
+  //     title: "SKIVIA",
+  //     icon: '/assets/images/skivia.png',
+  //     tag: 'New',
+  //     border: 'none',
+  //     topic: 'Bra',
+  //     subItems: [
+  //       "Luxury Bras",
+  //       "Everyday Bras",
+  //       "Printed Panties",
+  //       "Lace Lingerie",
+  //       "Nightwear Sets",
+  //       "Seamless Panties",
 
-      ],
-      sports: [
-        {
-          topic: "Sport Bra",
-          items: [
-            "Sports Bra",
-            "Yoga Pants",
-            "Track Pants",
-            "Tights",
-            "Pants",
-            "Panties",
-            "Nightwear",
-            "Active",
-            "Plus Size Active",
-            "Plus Size Nightwear",
-            "Plus Size Panties",
+  //     ],
+  //     sports: [
+  //       {
+  //         topic: "Sport Bra",
+  //         items: [
+  //           "Sports Bra",
+  //           "Yoga Pants",
+  //           "Track Pants",
+  //           "Tights",
+  //           "Pants",
+  //           "Panties",
+  //           "Nightwear",
+  //           "Active",
+  //           "Plus Size Active",
+  //           "Plus Size Nightwear",
+  //           "Plus Size Panties",
 
-          ]
-        }
-      ],
-      image: '/assets/images/cookie-bar.png',
-    },
-    {
-      title: "4 BRAS @899",
-    },
-    {
-      title: "4 PANTIES @599",
-    },
+  //         ]
+  //       }
+  //     ],
+  //     image: '/assets/images/cookie-bar.png',
+  //   },
+  //   {
+  //     title: "4 BRAS @899",
+  //   },
+  //   {
+  //     title: "4 PANTIES @599",
+  //   },
 
-  ];
+  // ];
 
 
   return (
@@ -327,7 +327,7 @@ const MainHeaderMenu = () => {
 
 
 
-      {/* {menuIsLoading ? (
+      {menuIsLoading ? (
         <MenuSkeleton />
       ) : (
         menuData?.length > 0 && (
@@ -337,9 +337,9 @@ const MainHeaderMenu = () => {
             ))}
           </ul>
         )
-      )} */}
+      )}
 
-<nav className="bottom-menu">
+{/* <nav className="bottom-menu">
       <div className="menu-nav menu-responsive">
         {menuItems.map((item, index) => (
           <div
@@ -385,12 +385,12 @@ const MainHeaderMenu = () => {
           </div>
         ))}
       </div>
-    </nav>
+    </nav> */}
 
 
       {/* liranova css bottom header */}
 
-      <style>{`
+      {/* <style>{`
       .bottom-menu {
     height: 49px;
     position: relative;
@@ -399,7 +399,7 @@ const MainHeaderMenu = () => {
       .header-nav{
       background: #118f79;
       }
-      /* Base nav style */
+     
 .menu-nav {
 width: 100%;
   display: flex;
@@ -567,7 +567,6 @@ gap: 80px;
 }
 
 .menu-nav-dropdown img{
-// width: 100%;
 flex: 1;
 max-width: 200px;
 object-fit: cover;
@@ -583,7 +582,6 @@ height: auto;
   box-shadow:0 0 8px #1a4b99;
 }
 
-/* Inside dropdown */
 .dropdown-items {
   display: flex;
   flex-wrap: wrap;
@@ -604,7 +602,6 @@ height: auto;
 .dropdown-items li:hover {
 }
 
-/* Responsive tweaks */
 @media (max-width: 768px) {
   .menu-nav {
     flex-direction: column;
@@ -629,7 +626,7 @@ height: auto;
 }
 
 .dropdown-column {
-  flex: 1 1 20%; /* Adjusts for 4 columns nicely */
+  flex: 1 1 20%; 
   list-style: none;
   padding: 0;
   margin: 0;
@@ -736,7 +733,7 @@ height: auto;
 
 
 
-      `}</style>
+      `}</style> */}
     </>
   );
 };

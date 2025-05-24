@@ -1,4 +1,8 @@
 {
   "/(mainLayout)/page": "app/(mainLayout)/page.js",
-  "/(mainLayout)/auth/login/page": "app/(mainLayout)/auth/login/page.js"
+  "/(mainLayout)/auth/register/page": "app/(mainLayout)/auth/register/page.js",
+  "/(mainLayout)/auth/phn-login/page": "app/(mainLayout)/auth/phn-login/page.js",
+  "/(mainLayout)/search/page": "app/(mainLayout)/search/page.js",
+  "/(mainLayout)/auth/login/page": "app/(mainLayout)/auth/login/page.js",
+  "/(mainLayout)/[...not-found]/page": "app/(mainLayout)/[...not-found]/page.js"
 }
